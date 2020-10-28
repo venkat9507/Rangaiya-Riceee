@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "com.android.rangaiyaasrice"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 30
+        multiDexEnabled true
+        versionName "5.0"
+        manifestPlaceholders = [manifestApplicationId          : "${applicationId}",
+                                onesignal_app_id               : "005703eb-6a58-44e8-ba1e-ae512bd76d7b",
+                                onesignal_google_project_number: "600682360657"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.3'
+    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.onesignal:OneSignal:3.15.4@aar'
+    implementation 'com.google.android.gms:play-services-ads:19.5.0'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    implementation "com.google.android.gms:play-services-location:17.1.0"
+    implementation 'com.github.quentin7b:android-location-tracker:3.2'
+    implementation 'com.google.firebase:firebase-crash:16.2.1'
+    implementation platform('com.google.firebase:firebase-bom:26.0.0')
+    implementation 'com.google.firebase:firebase-iid:21.0.0'
+    implementation 'org.jetbrains:annotations-java5:15.0'
+    implementation 'com.github.hotchemi:android-rate:1.0.1'
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.android.support:multidex:1.0.3'
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.android.application'

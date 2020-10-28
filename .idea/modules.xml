@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SuperViewWeb.iml" filepath="$PROJECT_DIR$/SuperViewWeb.iml" group="SuperViewWeb" />
+      <module fileurl="file://$PROJECT_DIR$/SuperViewWeb 2.iml" filepath="$PROJECT_DIR$/SuperViewWeb 2.iml" group="SuperViewWeb 2" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="SuperViewWeb/app" />
+    </modules>
+  </component>
+</project>
